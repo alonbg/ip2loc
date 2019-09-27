@@ -1,0 +1,17 @@
+language: go
+go:
+- 1.13
+install:
+- go get golang.org/x/tools/cmd/cover
+- go get github.com/mattn/goveralls
+script:
+- go test -v -covermode=count -coverprofile=coverage.out ./...
+- $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci -repotoken $COVERALLS_TOKEN
+- go build -ldflags "-s -w" -o bin/ip2loc cmd/ip2loc/*.go
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: "bin/ip2loc"
+  skip_cleanup: true
+  on:
+    tags: false
