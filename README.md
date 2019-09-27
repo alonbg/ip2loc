@@ -1,8 +1,8 @@
 # IP2Loc
-[![Godoc Reference](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/tserkov/ip2location)
-[![Build Status](https://img.shields.io/travis/tserkov/ip2location.svg?style=flat)](https://travis-ci.org/tserkov/ip2location)
-[![Coverage Status](https://img.shields.io/coveralls/github/tserkov/ip2location.svg?style=flat)](https://coveralls.io/github/tserkov/ip2location?branch=master)
-[![MIT License](https://img.shields.io/github/license/tserkov/ip2location.svg?style=flat)](../master/README.md)
+[![Godoc Reference](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/tserkov/ip2loc)
+[![Build Status](https://img.shields.io/travis/tserkov/ip2loc.svg?style=flat)](https://travis-ci.org/tserkov/ip2loc)
+[![Coverage Status](https://img.shields.io/coveralls/github/tserkov/ip2loc.svg?style=flat)](https://coveralls.io/github/tserkov/ip2loc?branch=master)
+[![MIT License](https://img.shields.io/github/license/tserkov/ip2loc.svg?style=flat)](../master/README.md)
 
 An IP2Location binary data query engine that only works with the DB1 (Country) database.
 
@@ -18,7 +18,7 @@ go get -u github.com/tserkov/ip2loc
 ```
 
 ## Usage
-It's all in the [godoc](https://godoc.org/github.com/tserkov/ip2location).
+It's all in the [godoc](https://godoc.org/github.com/tserkov/ip2loc).
 
 ### Example
 ```go
