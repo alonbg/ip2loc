@@ -10,8 +10,7 @@ script:
 - go build -ldflags "-s -w" -o bin/ip2loc cmd/ip2loc/*.go
 deploy:
   provider: releases
-  api_key: $GITHUB_TOKEN
-  file: "bin/ip2loc"
-  skip_cleanup: true
+  api_key: $GITHUB_RELEASE_TOKEN
+  file: bin/ip2loc
   on:
-    tags: false
+    repo: tserkov/ip2loc
